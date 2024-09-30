@@ -1,5 +1,52 @@
-.yarn/*
-node_modules
-.yarnrc.yml
+# Node modules
+node_modules/
+yarn/
+.yarn/
+.yarn/cache/
+.yarn/unplugged/
+.yarn/build-state.yml
+.yarn/install-state.gz
 
-.env
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Output directories
+dist/
+build/
+coverage/
+.tmp/
+.cache/
+
+# IDE and editor files
+.idea/
+.vscode/
+*.sublime-workspace
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore MacOS-specific files
+**/.DS_Store
+
+# Ignore Yarn installation state
+yarn/install-state.gz
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+
+# Generated files (e.g., during sandbox deploy)
+sandbox-upload/
+sandbox-cache/
+
+# Ignore specific types of files that are often not needed
+*.zip
+*.tar
+*.log
+*.bak
+*.orig
